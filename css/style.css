@@ -1,0 +1,90 @@
+/* Reset - Base */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Body */
+
+header{
+    height: 100vh;
+    background-image: url('../img/pc_desk2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media (min-width: 480px) {
+    header {
+        background-image: url('../img/pc_desk2.jpg');
+    }
+}
+
+/* http://uigradients.com/#Dawn */
+
+h1 {
+   /* text-shadow: 8px 8px 4px #000000; */
+    background: -webkit-linear-gradient(right,#F3904F,#3B4371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto {
+    display: flex;
+    flex-flow: column;
+    margin-top: 3em;
+}
+@media (min-width: 480px) {
+    .texto {
+        margin-top: 20vh;
+    }
+    body {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 768px) {
+    .texto {
+        margin-top: 30vh;
+    }
+    body {
+        font-size: 1.6em;
+    }
+}
+
+.texto2 {
+    font-size: 1.2em;
+}
