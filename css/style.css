@@ -42,21 +42,17 @@ body {
 
 header{
     height: 100vh;
-    background-image: url('../img/pc_desk2.jpg');
+    background-image: url('../img/pc_desk.jpg');
     background-size: cover;
     background-position: center;
 }
 
 
 
-/* http://uigradients.com/#Dawn */
-
 h1 {
     background: -webkit-linear-gradient(left,#F3904F,#3B4371);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
- */   
-    color: #757F9A;
 }
 
 .text {
@@ -83,24 +79,32 @@ h1 {
 }
 
 .text2 {
+    font-size: 1em;
+    text-shadow: 0 0 10px #000000;
+}
+
+@media (min-width: 480px) {
+    .text2 {
     font-size: 1.2em;
+    }
 }
 
 /* Section Contact */
 
 section {
     height: 100vh;
-   /* background-color: #222; */
-    background-image: url('../img/coding%20.jpg');
-    background-size: 330%;
+    background-image: url('../img/coding.jpg');
+    background-size: 1200px;
 }
-
-
+@media (min-width: 480px) {
+    section {
+        background-size: 1600px;
+    }
+}
 
 .contact {
     display: flex;
     flex-flow: column;
-    
 }
 
 .contact h2 {
@@ -110,13 +114,20 @@ section {
 
 .contact a {
     color: #FFFFEE;
+    background-color: rgba(34,34,34,0.7);
+    border-radius: 4px;
+    padding: 0.3em;
+}
+
+.contact a:hover {
+    background-color: rgba(34,34,34,0.9);
 }
 
 .contact .actions {
     display: flex;
     flex-flow: column;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 7em;
 }
 
 .tel {
@@ -128,8 +139,7 @@ section {
 
 footer {
     min-height: 10vh;
-    background-color: #757F9A;
-    display: flex;
+    background-color: rgba(34,34,34,1);
 }
 
 footer ul {
@@ -145,8 +155,19 @@ footer ul {
 
 footer a {
     font-size: 1.6em;
+    background-color: #222;
+    padding: 0.23em;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 4px;
+}
+
+footer a:hover {
+    color: #222;
+    background-color: #000;
 }
 
 footer li {
     margin: auto;
 }
+
