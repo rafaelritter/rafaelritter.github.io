@@ -47,7 +47,10 @@ header{
     background-position: center;
 }
 
-
+.resumo {
+    display: flex;
+    flex-flow: column;
+}
 
 h1 {
     background: -webkit-linear-gradient(left,#F3904F,#3B4371);
@@ -89,6 +92,23 @@ h1 {
     }
 }
 
+.button {
+    color: #FFFFEE;
+    margin: auto;
+    align-items: flex-end;
+}
+
+header .button {
+    color: #FFFFEE;
+    background-color: rgba(34,34,34,0.7);
+    border-radius: 4px;
+    padding: 0.3em;
+}
+
+header .button:hover {
+    background-color: rgba(34,34,34,0.9);
+}
+
 /* Section Contact */
 
 section {
@@ -123,17 +143,17 @@ section {
     background-color: rgba(34,34,34,0.9);
 }
 
-.contact .actions {
+.actions {
     display: flex;
     flex-flow: column;
     margin: auto;
+    align-content: space-around;
     margin-top: 7em;
 }
 
-.tel {
+.actions .tel {
     margin-top: 4em;
 }
-
 
 /* Footer */
 
