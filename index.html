@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>rafaelritter.github.io</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,width=devide-width">
+
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:url" content="https://rafaelritter.github.io">
+        <meta property="og:title" content="Rafael Ritter">
+        <meta property="og:site_name" content="Rafael Ritter">
+        <meta property="og:description" content="My portfolio site.">
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -13,31 +20,27 @@
 
     </head>
     <body>
-        <header class="resumo">
-            <h1 class="text">Rafael Ritter</h1>
-            <h2 class="text2"> Futuro engenheiro da computação</h2>
-            <a class="scroll button" href="#contato">Contato</a>
+        <header class="header">
+            <h1 class="header__title">Rafael Ritter</h1>
+            <h2 class="header__text">Futuro engenheiro da computação</h2>
+            <a class="header__button scroll" href="#contato">Contato</a>
         </header>
 
         <section class="contact" id="contato">
-            <h2>Entre em contato!</h2>
-            <div class="actions">
-                <a class="email" href="mailto:rafaelrittr@gmail.com">rafaelrittr@gmail.com</a>
-                <a class="tel" href="tel:+5515991422891">(15) 9 9142-2891</a>
+            <h2 class="contact__text">Entre em contato!</h2>
+            <div class="contact__actions">
+                <a class="contact__actions" href="mailto:rafaelrittr@gmail.com">rafaelrittr@gmail.com</a>
+                <a class="contact__actions actions__tel" href="tel:+5515991422891">(15) 9 9142-2891</a>
             </div>
         </section>
 
-        <footer>
-            <ul>
-                <li>
-                    <a href="https://github.com/rafaelritter" target="_blank">
-                    <span class="fa fa-github"></span>
-                    </a>
+        <footer class="footer">
+            <ul class="footer__ul">
+                <li class="footer__list">
+                    <a href="https://github.com/rafaelritter" target="_blank" class="fa fa-github footer__icon"></a>
                 </li>
                 <li>
-                    <a href="http://codepen.io/rittr/" target="_blank">
-                    <span class="fa fa-codepen"></span>
-                    </a>
+                    <a href="http://codepen.io/rittr/" target="_blank" class="fa fa-codepen"></a>
                 </li>
             </ul>
         </footer>
