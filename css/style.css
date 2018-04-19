@@ -44,11 +44,27 @@ body {
   flex-flow: column;
 }
 
+.header div {
+  border: 3px solid;
+  box-sizing: border-box;
+  border-image-source: linear-gradient(to left,#CB356B,#BD3F32);
+  border-image-slice: 20;
+  width: 300px;
+  margin: 4em auto;
+}
+
 .header .header__title {
-  background: -webkit-linear-gradient(left,#F3904F,#3B4371);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 2em;
-    font-size: 2.5em;
-    border: 3px solid black;
+  background: -webkit-linear-gradient(right,#CB356B,#BD3F32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0 -1em 0 -1em;
+  font-family: 'Rubik', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .header .header__title {
+    font-size: 3em;
+  }
 }
