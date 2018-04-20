@@ -30,7 +30,7 @@ a {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* Header */
@@ -67,4 +67,130 @@ body {
   .header .header__title {
     font-size: 3em;
   }
+}
+
+.header .header__text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  text-align: center;
+  color: #FAFAFA;
+  margin-top: 13vh;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media (min-width: 768px) {
+  .header .header__text {
+    font-size: 2em;
+    margin-top: 5vh;
+  }
+}
+@media (min-width: 1024px) {
+  .header .header__text {
+    margin-top: 25vh;
+  }
+}
+
+.header .header__button {
+  color: #FFFFEE;
+  margin: 15vh auto;
+  align-items: flex-end;
+  background-color: rgba(34,34,34,0.7);
+  border-radius: 8px;
+  padding: 0.3em;
+  font-size: 1.5em;
+  font-family: 'Roboto Mono', monospace;
+  transition: all .3s ease;
+}
+@media (min-width: 768px) {
+  .header .header__button {
+    font-size: 2.5em;
+    margin-top: 20vh;
+  }
+}
+@media (min-width: 1024px) {
+  .header .header__button {
+    font-size: 1.5em;
+    margin-top: 15vh;
+  }
+}
+
+.header .header__button:hover {
+  background-color: rgba(34,34,34,0.9);
+}
+
+/* Section Contact */
+
+.contact {
+  height: 90vh;
+  background-image: url('../img/bg2.jpg');
+  background-size: 1500px;
+  }
+
+.contact .contact__text {
+  margin: 0 auto;
+  padding: 2em;
+  color: #FFFFEE;
+}
+@media (min-width: 768px) {
+  .contact .contact__text {
+    font-size: 2em;
+  }
+}
+
+.contact .contact__div {
+  margin: 15vh auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.contact .contact__actions {
+  margin: 0 auto;
+  color: #FFFFEE;
+  background-color: rgba(34,34,34,0.8);
+  border-radius: 4px;
+  padding: 0.3em;
+}
+@media (min-width: 768px) {
+  .contact .contact__actions {
+    font-size: 1.8em;
+  }
+}
+.contact .contact__actions:hover {
+    background-color: rgba(34,34,34,0.9);
+}
+
+.contact .contact__tel {
+  margin-top: 1em;
+}
+
+/* Footer */
+
+.footer {
+    min-height: 10vh;
+    background-color: rgba(34,34,34,1);
+}
+
+.footer .footer__ul {
+    display: flex;
+    flex-flow: row;
+    padding-top: 1vh;
+}
+
+.footer .footer__list {
+    margin: auto;
+    font-size: 2em;
+    background-color: #222;
+    padding: 0.23em;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+@media (min-width: 768px) {
+  .footer .footer__list  {
+    font-size: 2.8em;
+  }
+}
+
+.footer a:hover {
+  background-color: rgba(34,34,34,0.8);
 }
