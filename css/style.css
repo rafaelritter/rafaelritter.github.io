@@ -38,13 +38,30 @@ body {
 /* Header */
 
 body {
-  background-color: #aaa
+  background-color: #AAAAAA;
 }
 
 .header {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   height: 100vh;
+  font-size: 1.1em;
 }
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+  .header {
+    height: 130vh;
+  }
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+  .header {
+    height: 110vh;
+  }}
 
 .header .header__title {
   padding: 2em;
@@ -95,9 +112,9 @@ body {
 .header .header__lista a {
   padding-right: 1em;
   color: #1D1D1D;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
   font-size: 1.5em;
 }
 .header .header__lista a:hover, .header .header__lista a:focus {
