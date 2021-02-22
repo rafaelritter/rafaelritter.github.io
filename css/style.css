@@ -32,17 +32,16 @@ a {
 
 body {
   top: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* Header */
 
 body {
-  background-color: #AAAAAA;
+  background-image: linear-gradient(rgb(228, 156, 60), rgb(228, 156, 68));
 }
 
 .header {
-  background-color: #FAFAFA;
   height: 100vh;
   font-size: 1.1em;
 }
@@ -77,15 +76,15 @@ and (orientation : landscape) {
   transition: all 3s ease;
 }
 .header .header__title span:hover, .header .header__title span:focus {
-  background: -webkit-linear-gradient(135deg, #184e68 0%,#57ca85 100%);
+  background: -webkit-linear-gradient(135deg, #FAFAFA 0%,#F9F9F9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .header .header__button {
   margin: 2em 4em;
-  background-image: -o-linear-gradient(315deg, #57ca85 0%, #184e68 100%);
-  background-image: linear-gradient(135deg, #57ca85 0%, #184e68 100%);
+  background-image: -o-linear-gradient(315deg, #FAFAFA 0%,#F9F9F9 100%);
+  background-image: linear-gradient(135deg, #FAFAFA 0%,#F9F9F9 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -95,7 +94,7 @@ and (orientation : landscape) {
 }
 .header .header__button:hover,.header .header__button:focus {
   background-size: 100% 88%;
-  color: #FFFFFF;
+  color: #111111;
 }
 
 .header .header__lista {
@@ -118,14 +117,13 @@ and (orientation : landscape) {
   font-size: 1.5em;
 }
 .header .header__lista a:hover, .header .header__lista a:focus {
-  color: #57ca85;
+  color: #F9F9F9;
 }
 
 /* Footer */
 
 .footer {
   height: 10vh;
-  background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,10 +134,10 @@ and (orientation : landscape) {
 
 .footer .footer__text {
   padding-left: 4em;
-  color: #ADADAD;
+  color: #222222;
   font-size: .8em;
 }
 
 .footer .footer__text i {
-  color: #184e68;
+  color: #123a4e;
 }
