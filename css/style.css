@@ -38,7 +38,11 @@ body {
 /* Header */
 
 body {
-  background-image: linear-gradient(rgb(228, 156, 60), rgb(228, 156, 68));
+  /* background-image: linear-gradient(rgb(228, 156, 60), rgb(228, 156, 68)); */
+  background: #FFEFBA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFEFBA, #FAFAFA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFEFBA, #FAFAFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .header {
@@ -76,15 +80,15 @@ and (orientation : landscape) {
   transition: all 3s ease;
 }
 .header .header__title span:hover, .header .header__title span:focus {
-  background: -webkit-linear-gradient(135deg, #FAFAFA 0%,#F9F9F9 100%);
+  background: -webkit-linear-gradient(135deg, #DAC57F 0%,#B19A4A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .header .header__button {
   margin: 2em 4em;
-  background-image: -o-linear-gradient(315deg, #333333 0%,#555555 100%);
-  background-image: linear-gradient(135deg, #333333 0%,#555555 100%);
+  background-image: -o-linear-gradient(315deg, #DAC57F 0%,#B19A4A 100%);
+  background-image: linear-gradient(135deg, #DAC57F 0%,#B19A4A 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -94,8 +98,8 @@ and (orientation : landscape) {
 }
 .header .header__button:hover,.header .header__button:focus {
   background-size: 100% 88%;
-  background-image: -o-linear-gradient(315deg, #FAFAFA 0%,#F9F9F9 100%);
-  background-image: linear-gradient(135deg, #FAFAFA 0%,#F9F9F9 100%);
+  background-image: -o-linear-gradient(315deg, #DAC57F 0%,#B19A4A 100%);
+  background-image: linear-gradient(135deg, #DAC57F 0%,#B19A4A 100%);
   color: #111111;
 }
 
@@ -119,7 +123,7 @@ and (orientation : landscape) {
   font-size: 1.5em;
 }
 .header .header__lista a:hover, .header .header__lista a:focus {
-  color: #F9F9F9;
+  color: #DAC57F;
 }
 
 /* Footer */
